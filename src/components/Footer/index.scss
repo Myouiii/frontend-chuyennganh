@@ -1,0 +1,56 @@
+.footer {
+  &-contact {
+    background-color: #3a5dd8;
+    * {
+      color: #fff;
+    }
+  }
+  .phone-icon {
+    font-size: 48px;
+  }
+  .social-item {
+    &:hover,
+    &:active {
+      transform: scale(1.5);
+      transition: all 0.35s;
+    }
+  }
+}
+.container-fluid {
+  width: 100%;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media only screen and (max-width: 767px) {
+  .footer {
+    &-contact {
+      &-item {
+        font-size: medium;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .footer {
+    &-contact {
+      &-item {
+        font-size: small;
+      }
+      &-flex{
+        flex-direction: column;
+      }
+     
+    }
+    .phone-icon {
+      font-size: 32px;
+    }
+
+  }
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
